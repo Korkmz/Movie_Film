@@ -1,0 +1,36 @@
+﻿
+
+<div class="row d-flex justify-content-center mt-5 ">
+    <div class="col-md-3 col-sm-12">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" list="searchs" name="mySearch" id="search">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary btn-secondary-custom" type="button" id="search-btn">  <i class="fa fa-search form-control-feedback"></i></button>
+            </div>
+        </div>
+        <datalist id="searchs" class="col-md-3 col-sm-12">
+            <option value=""></option>
+        </datalist>
+    </div>
+</div>
+
+@*<div class="row d-flex justify-content-center mt-5">
+     <!-- Actual search box -->
+  <div class="form-group has-search col-md-3 col-sm-12">
+
+    <span class="fa fa-search form-control-feedback"></span>
+    <input type="text" class="form-control form-control-sm search" placeholder="Search" id="search">
+  </div>
+
+</div>*@
+<div class="row d-flex justify-content-center" id="movie-fluid">
+</div>
+
+<nav id="pag_nav" class="d-flex flex-row-reverse">
+    <ul class="pagination">
+    </ul>
+</nav>
+
+
+<script src="~/js/home.js"></script>
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />

@@ -1,0 +1,123 @@
+﻿.movie-content {
+    width: 325px;
+    border: 1px #efefef solid;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor:pointer;
+}
+
+.movie-content-img {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.movie-title {
+    padding: 10px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: 400;
+    padding-bottom: 19px !important;
+}
+
+.movie-score {
+    padding: 2px 3px;
+    background: #ffe8ca;
+    width: auto;
+    width: 30px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    font-weight: 500;
+    left: 45%;
+    top: -9px;
+    background: #ffffff;
+    border: 1px #cfcccc solid;
+    /* right: 50%; */
+}
+
+
+.pagination {
+    display: inline-block;
+    cursor: pointer !important;
+}
+
+    .pagination li {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        border: 1px #dfdfdf solid;
+        cursor: pointer !important;
+    }
+        .pagination li.active {
+            background-color: #c2c2c2;
+            color: white;
+        }
+    /*
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+    }*/
+
+    .pagination a {
+        text-decoration: none;
+        color: #6f7276;
+    }
+
+.movie-detail{
+    font-size:14px;
+}
+
+.w-100{
+    width:100% !important;
+}
+
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.m-5 {
+    margin: 5px;
+}
+/* Styles for wrapping the search box */
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 1.975rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+a {
+    width: auto !important;
+    text-decoration: none;
+}
+
+.type-number {
+    border: 1px solid #a1a1a1;
+    padding: 0 5px;
+}
+
+.btn-secondary-custom {
+    border: 1px #d2d2d2 solid !important;
+}

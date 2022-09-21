@@ -1,0 +1,33 @@
+﻿@model Movie.Data.Model.ResultModel.MovieDetailResultModel
+
+<div class="row movie-detail mt-5">
+
+    <div class="movie-detail col-md-4 col-sm-12">
+        <img class="w-100" src="@Model.Detail.ImageUrl" />
+        <p class="mt-2"><span class="mr-5">@Model.Detail.CreatedTime.Year</span> | <span class="type-number m-1">@Model.Detail.TblGeneralAudienceType?.Name</span>  | <span class="m-1">@Model.Detail.TblMovieType?.Type</span> </p>
+
+        <p><b>@Model.Detail.Name</b></p>
+
+        <p>@Model.Detail.Description</p>
+    </div>
+
+    <div class="row col-md-8 col-sm-12 d-flex justify-content-center" id="movie-fluid">
+
+        <h4 class="text-center"><b>Benzer Filmler</b></h4>
+        @foreach (var item in Model.SimilarMovies)
+        {
+            <a href="/Movie/Detail/@item.Id">
+                <div class="movie-content">
+                    @*<div class="movie-score">@item.Score</div>*@
+                    <img class="movie-content-img" src="@item.ImageUrl">
+                    <div class="movie-title">@item.Name</div>
+                </div>
+            </a>
+        }
+
+    </div>
+
+
+</div>
+
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
