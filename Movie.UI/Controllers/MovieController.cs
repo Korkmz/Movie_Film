@@ -12,11 +12,9 @@ namespace Movie.UI.Controllers
     public class MovieController : Controller
     {
         private IMovieService _movieService;
-        private MovieDbContext _context;
-        public MovieController(IMovieService movieService, MovieDbContext context)
+        public MovieController(IMovieService movieService)
         {
             _movieService = movieService;
-            _context = context;
         }
 
         [HttpGet]
